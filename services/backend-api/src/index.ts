@@ -3,6 +3,7 @@ import { basicAuth } from 'hono/basic-auth'
 import { etag } from 'hono/etag'
 import { poweredBy } from 'hono/powered-by'
 import { prettyJSON } from 'hono/pretty-json'
+import { serve } from '@hono/node-server'
 
 const app = new Hono()
 
@@ -106,5 +107,13 @@ app.get('/error', () => {
 
 // @ts-ignore
 app.get('/type-error', () => 'return not Response instance')
+
+const port = 3000
+console.log(`Server is running on http://localhost:${port}`)
+
+serve({
+  fetch: app.fetch,
+  port
+})
 
 export default app

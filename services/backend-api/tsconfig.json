@@ -19,8 +19,12 @@
     "sourceMap": true,
     "verbatimModuleSyntax": true,
     "types": [
-      "vitest/globals"
-    ]
+      "vitest/globals",
+      "node"
+    ],
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
   },
 }
 
