@@ -18,6 +18,9 @@
     "outDir": "dist",
     "sourceMap": true,
     "verbatimModuleSyntax": true,
+    "types": [
+      "vitest/globals"
+    ]
   },
 }
 
