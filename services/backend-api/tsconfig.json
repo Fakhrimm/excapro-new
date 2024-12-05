@@ -1,23 +1,53 @@
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "jsx": "react-jsx",
+//     "jsxImportSource": "hono/jsx",
+//     "baseUrl": "./",
+//     "module": "ESNext",
+//     "moduleResolution": "Bundler",
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     },
+//     "typeRoots": ["./node_modules/@types"],
+//     "types": [
+//       "node"
+//     ],
+//     "strict": true,
+//     "outDir": "./dist",
+//     "skipLibCheck": true
+//   },
+//   "tsc-alias": {
+//     "resolveFullPaths": true
+//   }
+// }
+
 {
   "compilerOptions": {
     /* Base Options: */
     "skipLibCheck": true,
-    "target": "es2022",
-    "esModuleInterop": true,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
+    "target": "ESNext",
+    // "esModuleInterop": true,
+    // "allowJs": true,
+    // "resolveJsonModule": true,
+    // "moduleDetection": "force",
+    // "isolatedModules": true,
 
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
 
-    /* If transpiling with tsc: */
-    "module": "NodeNext",
-    "outDir": "dist",
-    "sourceMap": true,
+    
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": "./dist",
+    // "sourceMap": true,
     "verbatimModuleSyntax": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "types": [
       "vitest/globals",
       "node"
