@@ -1,8 +1,47 @@
-<mat-toolbar class="!bg-blue-300 !px-12">
-  <div class="flex justify-between w-full h-full items-center">
-    <span class="text-lg font-semibold">Excapro</span>
-    <button class="bg-white text-blue-500 rounded px-4 py-2 hover:bg-blue-200">
-      Button
-    </button>
+<mat-toolbar class="!bg-primary !px-16">
+  <div class="flex w-full h-full items-center relative justify-center">
+    <div class="flex w-full h-full items-center justify-between absolute z-10">
+      <a
+        href="/"
+        class="flex bg-primary text-primary-text h-full px-4 text-xl font-semibold hover:opacity-heavy transition-opacity duration-200 justify-center items-center"
+        >Excapro</a
+      >
+
+      <div class="flex justify-between gap-6">
+        <a
+          href="/login"
+          class="bg-primary-accent text-primary-text rounded-3xl px-6 py-2 text-base font-light hover:opacity-heavy transition-opacity duration-200"
+        >
+          Login
+        </a>
+        <a
+          href="/sign-up"
+          class="bg-primary text-primary-text border border-primary-text rounded-3xl px-5 py-2 text-base font-light hover:opacity-heavy transition-opacity duration-200"
+        >
+          Sign up
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex w-fit h-full items-center justify-center absolute z-20 gap-28"
+    >
+      <a
+        href="/about/features"
+        class="flex bg-primary text-primary-text h-full px-4 text-base font-light hover:opacity-heavy transition-opacity duration-200 justify-center items-center"
+      >
+        About us
+      </a>
+      <a
+        href="/about/features"
+        class="flex bg-primary text-primary-text h-full px-4 text-base font-light hover:opacity-heavy transition-opacity duration-200 justify-center items-center"
+      >
+        Features
+      </a>
+    </div>
   </div>
+
+  <!-- <div class="relative h-screen flex items-center justify-center bg-gray-100">
+    <div class="absolute text-3xl text-black z-10">About Us</div>
+    <div class="absolute text-3xl text-blue-500 z-20">Features</div>
+  </div> -->
 </mat-toolbar>

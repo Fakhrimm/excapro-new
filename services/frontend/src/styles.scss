@@ -20,3 +20,37 @@ html {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Inter, "Helvetica Neue", sans-serif; }
+
+
+:root {
+  --color-primary: #96331E;
+  --color-primary-accent: #7D2F1F;
+  --color-primary-text: #FFFFFF;
+  --color-primary-text-accent: #FDE68A;
+  
+  --color-light: #FEF4F2;
+  --color-light-text: #96331E;
+  --color-light-text-heavy: #000000;
+  
+  --color-plain: #FFFFFF;
+  --color-plain-accent: #545F71;
+  --color-plain-text: #525252;
+  --color-plain-text-heavy: #000000;
+  --color-plain-text-accent: #CF4326;
+}
+
+.dark {
+  --color-primary: #96331E;
+  --color-primary-text: #FFFFFF;
+  --color-primary-text-accent: #FDE68A;
+
+  --color-light: #FEF4F2;
+  --color-light-text: #96331E;
+  --color-light-text-heavy: #000000;
+
+  --color-plain: #FFFFFF;
+  --color-plain-accent: #545F71;
+  --color-plain-text: #525252;
+  --color-plain-text-heavy: #000000;
+  --color-plain-text-accent: #CF4326;
+}
