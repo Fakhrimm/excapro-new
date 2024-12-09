@@ -63,6 +63,14 @@ body { margin: 0; font-family: Inter, "Helvetica Neue", sans-serif; }
   @apply text-4xl sm:text-6xl;
 }
 
+.fsize-subheader {
+  @apply text-2xl sm:text-4xl;
+}
+
 .fsize-desc {
   @apply text-base sm:text-lg;
+}
+
+.fsize-subdesc {
+  @apply text-sm sm:text-base;
 }

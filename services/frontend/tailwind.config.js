@@ -29,18 +29,38 @@ module.exports = {
         'non': '0.00',
       },
       keyframes: {
-        'fade-in': {
+        'fade-in-u': {
           '0%': { opacity: 0, transform: 'translateY(-5px)', visibility: 'hidden' },
           '100%': { opacity: 1, transform: 'translateY(0)', visibility: 'block' },
         },
-        'fade-out': {
+        'fade-out-u': {
           '0%': { opacity: 1, transform: 'translateY(0)', visibility: 'block' },
           '100%': { opacity: 0, transform: 'translateY(-5px)', visibility: 'hidden' },
         },
+        'fade-in-l': {
+          '0%': { opacity: 0, transform: 'translateX(-10px)', visibility: 'hidden' },
+          '100%': { opacity: 1, transform: 'translateX(0)', visibility: 'block' },
+        },
+        'fade-out-l': {
+          '0%': { opacity: 1, transform: 'translateX(0)', visibility: 'block' },
+          '100%': { opacity: 0, transform: 'translateX(-10px)', visibility: 'hidden' },
+        },
+        'fade-in-r': {
+          '0%': { opacity: 0, transform: 'translateX(10px)', visibility: 'hidden' },
+          '100%': { opacity: 1, transform: 'translateX(0)', visibility: 'block' },
+        },
+        'fade-out-r': {
+          '0%': { opacity: 1, transform: 'translateX(0)', visibility: 'block' },
+          '100%': { opacity: 0, transform: 'translateX(10px)', visibility: 'hidden' },
+        },
       },
       animation: {
-        'fade-in': 'fade-in 0.3s ease-out forwards',
-        'fade-out': 'fade-out 0.3s forwards',
+        'fade-in-u': 'fade-in-u 0.3s ease-out forwards',
+        'fade-out-u': 'fade-out-u 0.3s forwards',
+        'fade-in-l': 'fade-in-l 0.3s ease-out forwards',
+        'fade-out-l': 'fade-out-l 0.3s forwards',
+        'fade-in-r': 'fade-in-r 0.3s ease-out forwards',
+        'fade-out-r': 'fade-out-r 0.3s forwards',
       }
     },
   },
