@@ -21,7 +21,8 @@ export class DataWidgetComponent {
       ([entry]) => {
         if (entry.isIntersecting) {
           this.animateCount();
-          this.observer.unobserve(this.elementRef.nativeElement);
+        } else {
+          this.shownNumber = 0;
         }
       },
       { threshold: 0.1 }

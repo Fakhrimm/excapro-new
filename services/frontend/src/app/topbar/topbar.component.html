@@ -15,6 +15,7 @@
 
       <button
         class="bg-light text-primary-text rounded-3xl px-6 py-2 text-base font-light hover:opacity-heavy transition-opacity duration-200 sm:hidden"
+        (click)="buttonPress()"
       ></button>
 
       <div class="sm:flex justify-between gap-6 hidden">
@@ -48,6 +49,35 @@
         Features
       </a>
     </div>
+  </div>
+  <div
+    [ngClass]="{
+    '!animate-fade-out-u': !isButtonPressed,
+    '!animate-fade-in-u': isButtonPressed,
+    'hidden': !isInit,
+  }"
+    class="flex flex-col fixed z-[51] right-4 top-10 p-2 bg-white rounded-md border border-light-text-heavy"
+  >
+    <a
+      href="/about"
+      class="fsize-desc py-2 border-b text-plain-text-heavy hover:opacity-heavy"
+      >About us</a
+    >
+    <a
+      href="/about#features"
+      class="fsize-desc py-2 border-b text-plain-text-heavy hover:opacity-medium"
+      >Features</a
+    >
+    <a
+      href="/login"
+      class="fsize-desc py-2 border-b text-plain-text-heavy hover:opacity-medium"
+      >Login</a
+    >
+    <a
+      href="/sign-up"
+      class="fsize-desc py-2 border-b text-plain-text-heavy hover:opacity-medium"
+      >Sign up</a
+    >
   </div>
 </mat-toolbar>
 <div class="bg-primary h-14 sm:20"></div>
