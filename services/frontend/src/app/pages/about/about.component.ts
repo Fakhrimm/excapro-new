@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { DataWidgetComponent } from '@app/widgets/data-widget/data-widget.component';
-import { ListWidgetComponent } from '@app/widgets/list-widget/list-widget.component';
+import { DataWidgetComponent } from '@app/components/data-widget/data-widget.component';
+import { ListWidgetComponent } from '@app/components/list-widget/list-widget.component';
 
 @Component({
   selector: 'app-about',
