@@ -1,4 +1,10 @@
-<mat-toolbar class="!bg-primary !px-16">
+<mat-toolbar
+  [ngClass]="{
+    '!opacity-0': !isScrolled,
+    '!opacity-100': isScrolled,
+  }"
+  class="!bg-primary !sm:px-16 !transition-opacity !duration-200 fixed"
+>
   <div class="flex w-full h-full items-center relative justify-center">
     <div class="flex w-full h-full items-center justify-between absolute z-10">
       <a
@@ -7,41 +13,41 @@
         >Excapro</a
       >
 
-      <div class="flex justify-between gap-6">
+      <button
+        class="bg-light text-primary-text rounded-3xl px-6 py-2 text-base font-light hover:opacity-heavy transition-opacity duration-200 sm:hidden"
+      ></button>
+
+      <div class="sm:flex justify-between gap-6 hidden">
         <a
           href="/login"
-          class="bg-primary-accent text-primary-text rounded-3xl px-6 py-2 text-base font-light hover:opacity-heavy transition-opacity duration-200"
+          class="bg-primary-accent text-primary-text rounded-3xl px-6 py-2 font-light hover:opacity-heavy transition-opacity duration-200 fsize-btn"
         >
           Login
         </a>
         <a
           href="/sign-up"
-          class="bg-primary text-primary-text border border-primary-text rounded-3xl px-5 py-2 text-base font-light hover:opacity-heavy transition-opacity duration-200"
+          class="bg-primary text-primary-text border border-primary-text rounded-3xl px-5 py-2 font-light hover:opacity-heavy transition-opacity duration-200 fsize-btn"
         >
           Sign up
         </a>
       </div>
     </div>
     <div
-      class="flex w-fit h-full items-center justify-center absolute z-20 gap-28"
+      class="sm:flex w-fit h-full items-center justify-center absolute z-20 hidden gap-4 md:gap-14 lg:gap-28"
     >
       <a
         href="/about"
-        class="flex bg-primary text-primary-text h-full px-4 text-xl font-light hover:opacity-heavy transition-opacity duration-200 justify-center items-center"
+        class="flex bg-primary text-primary-text h-full px-4 font-light hover:opacity-heavy transition-opacity duration-200 justify-center items-center fsize-btn"
       >
         About us
       </a>
       <a
         href="/about#features"
-        class="flex bg-primary text-primary-text h-full px-4 text-xl font-light hover:opacity-heavy transition-opacity duration-200 justify-center items-center"
+        class="flex bg-primary text-primary-text h-full px-4 font-light hover:opacity-heavy transition-opacity duration-200 justify-center items-center fsize-btn"
       >
         Features
       </a>
     </div>
   </div>
-
-  <!-- <div class="relative h-screen flex items-center justify-center bg-gray-100">
-    <div class="absolute text-3xl text-black z-10">About Us</div>
-    <div class="absolute text-3xl text-blue-500 z-20">Features</div>
-  </div> -->
 </mat-toolbar>
+<div class="bg-primary h-14 sm:20"></div>

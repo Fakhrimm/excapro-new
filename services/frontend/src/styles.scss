@@ -54,3 +54,15 @@ body { margin: 0; font-family: Inter, "Helvetica Neue", sans-serif; }
   --color-plain-text-heavy: #000000;
   --color-plain-text-accent: #CF4326;
 }
+
+.fsize-btn {
+  @apply text-sm sm:text-base;
+}
+
+.fsize-header {
+  @apply text-4xl sm:text-6xl;
+}
+
+.fsize-desc {
+  @apply text-base sm:text-lg;
+}

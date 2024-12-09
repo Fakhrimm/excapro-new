@@ -1,12 +1,12 @@
-<div class="flex-col w-full">
+<div class="flex flex-col w-full items-center justify-center">
   <div class="flex bg-primary w-full py-20 items-center justify-center">
-    <div class="w-[48rem]">
-      <h1 class="text-primary-text text-6xl font-semibold text-center">
+    <div class="w-[24rem] sm:w-[48rem]">
+      <h1 class="text-primary-text font-semibold text-center fsize-header">
         A new way to start your
         <span class="text-primary-text-accent">excavation</span>
         project
       </h1>
-      <p class="text-primary-text my-12 text-center text-xl">
+      <p class="text-primary-text my-12 text-center fsize-desc">
         Choose your excavation tools here with our algorithm. Prioritize
         objective criteria and data-driven analysis over arbitrary choices
       </p>
@@ -14,13 +14,13 @@
       <div class="flex w-full justify-center gap-6">
         <a
           href="/login"
-          class="bg-primary-text text-primary rounded-md px-4 py-2 text-base hover:opacity-heavy transition-opacity duration-200"
+          class="bg-primary-text text-primary rounded-md px-4 py-2 hover:opacity-heavy transition-opacity duration-200 fsize-btn"
         >
           Try now
         </a>
         <a
           href="/sign-up"
-          class="bg-primary text-primary-text border border-primary-text rounded-md px-4 py-2 text-base hover:opacity-heavy transition-opacity duration-200"
+          class="bg-primary text-primary-text border border-primary-text rounded-md px-4 py-2 hover:opacity-heavy transition-opacity duration-200 fsize-btn"
         >
           Request Demo
         </a>
@@ -28,23 +28,25 @@
     </div>
   </div>
 
-  <div class="flex-col w-full mt-24 px-96">
+  <div class="flex-col w-[28rem] mt-24 sm:w-[52rem]">
     <div
       class="flex-col w-full bg-light rounded-3xl p-12 items-center justify-center"
     >
       <div class="flex w-full items-center justify-center">
         <div class="flex-col w-[48rem]">
-          <h2 class="text-light-text-heavy text-5xl font-semibold text-center">
+          <h2
+            class="text-light-text-heavy font-semibold text-center fsize-header"
+          >
             Why use Excapro?
           </h2>
-          <p class="mt-10 text-center text-xl">
+          <p class="mt-10 text-center fsize-desc">
             Choose your excavation tools here with our algorithm. Prioritize
             objective criteria and data-driven analysis over arbitrary choices
           </p>
         </div>
       </div>
 
-      <div class="flex w-full mt-12 justify-between gap-16">
+      <div class="flex flex-col sm:flex-row w-full mt-12 justify-between gap-8">
         <app-data-widget></app-data-widget>
         <app-data-widget></app-data-widget>
         <app-data-widget></app-data-widget>
@@ -52,5 +54,6 @@
     </div>
 
     <!-- Continue work here -->
+    <div class="h-[100rem]"></div>
   </div>
 </div>
