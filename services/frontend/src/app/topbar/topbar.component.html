@@ -1,7 +1,7 @@
 <mat-toolbar
   [ngClass]="{
-    '!opacity-0': !isScrolled,
-    '!opacity-100': isScrolled,
+    '!animate-fade-out': !isScrolled,
+    '!animate-fade-in': isScrolled,
   }"
   class="!bg-primary !sm:px-16 !transition-opacity !duration-200 fixed"
 >
