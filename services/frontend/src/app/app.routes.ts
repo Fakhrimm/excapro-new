@@ -10,10 +10,11 @@ import { StatisticsComponent } from './pages/statistics/statistics.component';
 export const routes: Routes = [
   { path: '', component: AboutComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'events', component: EventsComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'stats', component: StatisticsComponent },
   { path: 'users', component: UsersComponent },
+
+  { path: 'auth/:type', component: LoginComponent },
 ];
