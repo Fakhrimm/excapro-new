@@ -55,12 +55,12 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in-u': 'fade-in-u 0.3s ease-out forwards',
-        'fade-out-u': 'fade-out-u 0.3s forwards',
-        'fade-in-l': 'fade-in-l 0.3s ease-out forwards',
-        'fade-out-l': 'fade-out-l 0.3s forwards',
-        'fade-in-r': 'fade-in-r 0.3s ease-out forwards',
-        'fade-out-r': 'fade-out-r 0.3s forwards',
+        'fade-in-u': 'fade-in-u 0.5s ease-out forwards',
+        'fade-out-u': 'fade-out-u 0.5s forwards',
+        'fade-in-l': 'fade-in-l 0.5s ease-out forwards',
+        'fade-out-l': 'fade-out-l 0.5s forwards',
+        'fade-in-r': 'fade-in-r 0.5s ease-out forwards',
+        'fade-out-r': 'fade-out-r 0.5s forwards',
       }
     },
   },
